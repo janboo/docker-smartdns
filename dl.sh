@@ -20,6 +20,7 @@ case $OSARCH in
         ;;
 esac
 
+echo "OSARCH: $OSARCH"
 wget --no-check-certificate -qO- https://api.github.com/repos/pymumu/smartdns/releases/latest \
 | grep browser_download_url | grep "$BINTAG" | cut -d '"' -f 4 \
 | wget --no-check-certificate --no-verbose -i-
