@@ -17,7 +17,7 @@ on:
 
 env:
   REPO_NAME: docker-smartdns
-  REPO_VER: r42
+  REPO_VER: r43
 
 jobs:
   build-docker:
